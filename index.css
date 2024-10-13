@@ -4,21 +4,99 @@ main {
     margin: 20px auto;
 }
 
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu*/
 .navigation {
     display: flex;
-    gap: 10px;
-    align-items: center;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
-.left {
+/* Left part of the menu */
+.navigation .left {
     display: flex;
-    gap: 1rem;
+    align-items: center;
 }
 
-.right {
+/* Right part of the menu */
+.navigation .right {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 20px; /* Space between the right menu items */
 }
+
+/* Menu item spacing */
+.navigation .left p,
+.navigation .right p {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+/* Hover effect on menu items */
+.navigation .left p:hover,
+.navigation .right p:hover {
+    background-color: rgb(180, 178, 178);
+}
+
+/* Special styling for the 'Get Barky Free' button */
+#dark {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Caret icon alignment */
+.navigation .left img {
+    margin-left: 8px;
+}
+
+/* Caret image spacing */
+.navigation .left img {
+    width: 10px; /* Adjust size of caret icons */
+    height: auto;
+    margin-left: 5px; /* Spacing between text and caret */
+}
+
+/* Brand logo */
+.navigation .left img:first-child {
+    width: 100px; /* Adjust the size of the brand logo */
+    margin-right: 20px; /* Space between the brand logo and the menu items */
+}
+
+#images1, img {
+    /*! width: 100px; */
+}
+
+#images1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+#images1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
 
