@@ -88,6 +88,8 @@ main {
   grid-gap: 20px;
   justify-items: center;
   padding: 20px;
+  border-bottom: solid gray 1px;
+  border-top: solid gray 1px;
 }
 
 #images1 img {
