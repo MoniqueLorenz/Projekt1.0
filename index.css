@@ -243,3 +243,39 @@ margin-top: 40px;
 #link {
     margin-top: 10px;
 }
+
+.procent {
+    display: flex;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#procent1 {
+    border-right: solid grey 1px;
+    width: 250px;
+}
+
+#procent2 {
+    width: 250px;
+    border-right: solid grey 1px;
+}
+
+#procent3 {
+    width: 250px;
+        border-right: solid grey 1px;
+}
+
+#procent4 {
+    width: 250px;
+}
+
+.g2 {
+    display: flex;
+    align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#badges img {
+    width: 450px
+}
