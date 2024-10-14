@@ -68,6 +68,21 @@ main {
     width: 145px;
 }
 
+#dark2 {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 145px;
+    text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* Caret icon alignment */
 .navigation .left img {
     margin-left: 8px;
@@ -84,10 +99,6 @@ main {
 .navigation .left img:first-child {
     width: 100px; /* Adjust the size of the brand logo */
     margin-right: 20px; /* Space between the brand logo and the menu items */
-}
-
-#images1, img {
-    /*! width: 100px; */
 }
 
 #images1 {
@@ -178,4 +189,37 @@ main {
 
 div#text {
     margin-bottom: 30px;
+}
+
+#mainbox {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #7c7c7c; 
+    border-radius: 8px; 
+    background-color: #a2a1a1; 
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 0; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.table2 img {
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; 
+}
+
+.row:last-child {
+    border-bottom: none; 
+}
+
+.text5 {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
