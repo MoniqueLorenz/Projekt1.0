@@ -1,3 +1,11 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter.ttf);
+}
+
+body {
+    font-family: inter;
+}
 
 main {
     max-width: 1000px;
@@ -57,7 +65,7 @@ main {
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
-    width: 135px;
+    width: 145px;
 }
 
 /* Caret icon alignment */
@@ -102,6 +110,8 @@ main {
 .section1 {
     display: flex;
     align-items: center;
+    margin-bottom: 100px;   
+    margin-top: 100px;
 }
 
 .section1 img {
@@ -110,8 +120,8 @@ main {
 }
 
 .section2 {
-    margin: 0 auto;
     padding: 20px;
+    margin-top: 30px;
 }
 
 .section3 {
@@ -123,6 +133,10 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+#shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   
   .section2 h1, .section2 p {
     margin: 10px 0;
@@ -132,7 +146,6 @@ main {
   .section2 img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .face {
@@ -141,6 +154,7 @@ main {
     text-align: start;
     margin-top: 20px;
     justify-content: center;
+    margin-bottom: 50px;
   }
   
   .face img {
@@ -155,11 +169,13 @@ main {
 .section3 img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section4 img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div#text {
+    margin-bottom: 30px;
 }
