@@ -104,3 +104,7 @@ main {
 .section1 img {
     width: 500px;
 }
+
+.section2 img {
+    max-width: 1000px
+}
