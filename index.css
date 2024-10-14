@@ -98,13 +98,87 @@ main {
 }
 
 .section1 {
-    display: flex
+    display: flex;
+    align-items: center;
 }
 
 .section1 img {
-    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 .section2 img {
     max-width: 1000px
+}
+
+.section2 {
+    text-align: left; /* Aligns all text inside this div to the left */
+    padding: 20px;
+    max-width: 800px; /* Optional: limits the width for better readability */
+    margin: 0 auto; /* Centers the section horizontally within the page */
+  }
+  
+  .section2 h1, .section2 p {
+    margin: 10px 0;
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Optional: Limit the width for readability */
+    padding: 20px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Optional: Limit the width for readability */
+    padding: 20px;
+  }
+  
+  .section2 h1, .section2 p {
+    margin: 10px 0;
+  }
+  
+  .section2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .face {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin-top: 20px;
+  }
+  
+  .face img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .face h2 {
+    margin: 10px 0 5px 0;
+  }
+  
+  .face p {
+    margin: 0;
+  }  
+
+.section3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section4 img {
+    max-width: 100%;
+    height: auto;
 }
