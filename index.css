@@ -284,3 +284,95 @@ margin-top: 40px;
 #badges img {
     width: 450px
 }
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #666;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer .column {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 180px;
+}
+
+.footer .column:first-child {
+    max-width: 250px; /* Adjust the width for the first column with the logo */
+}
+
+.footer .logo img {
+    width: 150px; /* Adjust the size of the logo */
+}
+
+.footer .social-icons {
+    margin: 20px 0 40px;
+}
+
+.footer .social-icons img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.footer .legal {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer .links div h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    
+}
+
+.footer .links div ul {
+    padding: 0;
+}
+
+.footer .links div ul li {
+    margin-bottom: 8px;
+    
+}
+
+.footer .links div ul li a {
+    color: #666;
+    text-decoration: none;
+    
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+ul, ol {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;  
+    color: inherit;         
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+
+}
