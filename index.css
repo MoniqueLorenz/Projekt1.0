@@ -8,14 +8,15 @@ body {
     margin: 0;
 }
 
+/* Main container */
 main {
     max-width: 1000px;
     margin: 20px auto;
 }
 
-main p, h1, h2{
+main p, h1, h2 {
     margin-top: 20px;
-    line-height: 1.3;  
+    line-height: 1.3;
 }
 
 /* Basic reset */
@@ -25,7 +26,7 @@ main p, h1, h2{
     box-sizing: border-box;
 }
 
-/* Menu*/
+/* Navigation menu */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -33,22 +34,21 @@ main p, h1, h2{
     padding: 10px 20px;
 }
 
-/* Left part of the menu */
+/* Left part of the navigation */
 .navigation .left {
     display: flex;
     align-items: center;
 }
 
-/* Right part of the menu */
+/* Right part of the navigation */
 .navigation .right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between the right menu items */
+    gap: 20px; /* Adds space between right menu items */
 }
 
-/* Menu item spacing */
-.navigation .left p,
-.navigation .right p {
+/* Styling for menu items */
+.navigation .left p, .navigation .right p {
     margin-left: 20px;
     cursor: pointer;
     font-size: 16px;
@@ -58,13 +58,12 @@ main p, h1, h2{
 }
 
 /* Hover effect on menu items */
-.navigation .left p:hover,
-.navigation .right p:hover {
+.navigation .left p:hover, .navigation .right p:hover {
     background-color: rgb(180, 178, 178);
 }
 
-/* Special styling for the 'Get Barky Free' button */
-#dark {
+/* Special button styling */
+#dark, #dark2 {
     background-color: black;
     color: white;
     padding: 8px 16px;
@@ -75,59 +74,46 @@ main p, h1, h2{
 }
 
 #dark2 {
-    background-color: black;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 145px;
     text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-/* Caret icon alignment */
+/* Brand logo and caret icon spacing */
 .navigation .left img {
-    margin-left: 8px;
-}
-
-/* Caret image spacing */
-.navigation .left img {
-    width: 10px; /* Adjust size of caret icons */
+    width: 10px;
     height: auto;
-    margin-left: 5px; /* Spacing between text and caret */
+    margin-left: 5px;
 }
 
-/* Brand logo */
 .navigation .left img:first-child {
-    width: 100px; /* Adjust the size of the brand logo */
-    margin-right: 20px; /* Space between the brand logo and the menu items */
+    width: 100px; /* Brand logo */
+    margin-right: 20px;
 }
 
+/* Image grid styling */
 #images1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: solid gray 1px;
-  border-top: solid gray 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
 }
 
 #images1 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Section 1 (unchanged) */
 .section1 {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;   
+    margin-bottom: 100px;
     margin-top: 100px;
 }
 
@@ -136,161 +122,123 @@ main p, h1, h2{
     height: auto;
 }
 
-.section2 {
-    padding: 20px;
-    margin-top: 30px;
-}
-
-.section3 {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section4 {
-    margin: 0 auto;
-    padding: 20px;
+/* Section spacing */
+.section2, .section3, .section4, .section5 .section6, .section7, .section8{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .section5 {
-    border-bottom: solid grey 1px;
-    border-top: solid grey 1px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
 }
 
 #shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
-  .section2 h1, .section2 p {
-    margin: 10px 0;
-    text-align: inherit;
-  }
-  
-  .section2 img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .face {
-    display: flex;
-    align-items: center;
-    text-align: start;
-    margin-top: 20px;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  
-  .face img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .face p {
-    margin: 0;
-  }  
 
-.section3 img {
+/* Text and image formatting inside sections */
+.section2 h1, .section2 p {
+    margin: 10px 0;
+}
+
+.section2 img, .section3 img, .section4 img {
     max-width: 100%;
     height: auto;
 }
 
-.section4 img {
-    max-width: 100%;
-    height: auto;
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 50px;
+}
+
+.face img {
+    width: 50px;
+    height: 50px;
 }
 
 div#text {
     margin-bottom: 30px;
 }
 
+/* Main box styling */
 #mainbox {
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    border-radius: 8px; 
-    background-color: #eeecec; 
-    margin-bottom: 80px;
+    max-width: 600px;
+    margin: 0 auto 80px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #eeecec;
 }
 
+/* Table styling */
 .row {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 0; 
-    border-bottom: 1px solid #ccc; 
-}
-
-.table2 img {
-    width: 20px; 
-    height: 20px; 
-    display: inline-block; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .row:last-child {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
+.table2 img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Centered text section */
 .text5 {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Emoji section styling */
 .emoji {
     display: flex;
-        text-align: center;
-margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-#emoji1, #emoji2{
-    border-right: solid grey 1px;
+#emoji1, #emoji2 {
+    border-right: 1px solid grey;
 }
 
 #link {
     margin-top: 10px;
 }
 
+/* Procent section */
 .procent {
     display: flex;
     text-align: center;
     margin-bottom: 80px;
 }
 
-#procent1 {
-    border-right: solid grey 1px;
+#procent1, #procent2, #procent3, #procent4 {
     width: 250px;
 }
 
-#procent2 {
-    width: 250px;
-    border-right: solid grey 1px;
+#procent1, #procent2, #procent3 {
+    border-right: 1px solid grey;
 }
 
-#procent3 {
-    width: 250px;
-        border-right: solid grey 1px;
-}
-
-#procent4 {
-    width: 250px;
-}
-
-.g2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
+/* Badges */
 #badges img {
-    width: 450px
+    width: 450px;
 }
 
+/* Footer styling */
 .footer {
-    background-color: #f8f8f8;
-    padding: 40px 0;
+    border-top: solid gray 1px;
     color: #666;
     max-width: 1000px;
     margin: 20px auto;
+    padding-top: 70px;
 }
 
 .footer .container {
@@ -309,11 +257,11 @@ margin-top: 40px;
 }
 
 .footer .column:first-child {
-    max-width: 250px; /* Adjust the width for the first column with the logo */
+    max-width: 250px;
 }
 
 .footer .logo img {
-    width: 150px; /* Adjust the size of the logo */
+    width: 150px;
 }
 
 .footer .social-icons {
@@ -327,8 +275,8 @@ margin-top: 40px;
 
 .footer .legal {
     margin-bottom: 10px;
-    color: #666;
     font-size: 14px;
+    color: #666;
 }
 
 .footer .links div h4 {
@@ -336,7 +284,6 @@ margin-top: 40px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
-    
 }
 
 .footer .links div ul {
@@ -345,13 +292,11 @@ margin-top: 40px;
 
 .footer .links div ul li {
     margin-bottom: 8px;
-    
 }
 
 .footer .links div ul li a {
     color: #666;
     text-decoration: none;
-    
 }
 
 .footer .copyright {
@@ -360,19 +305,42 @@ margin-top: 40px;
     color: #666;
 }
 
+/* List styling */
 ul, ol {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* Link styling */
 a {
-    text-decoration: none;  
-    color: inherit;         
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Make it responsive */
+/* Section 7 (g2 unchanged) */
+.g2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#badges img {
+    width: 450px;
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 600px) {
+    
+    .navigation {
+        display: none;
+    }
+    
+    /* Procent section */
+    .procent {
+        text-align: center;
+        margin-bottom: 80px;
+    }
 
 }
