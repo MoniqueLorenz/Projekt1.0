@@ -6,6 +6,7 @@
 body {
     font-family: inter;
     margin: 0;
+    padding: 0px 20px;
 }
 
 /* Main container */
@@ -336,11 +337,46 @@ a {
     .navigation {
         display: none;
     }
+
+        .section1 {
+          display: grid;
+          margin-top: 100px;
+          justify-content: center;
+          text-align: center;
+        }
+
+    .section1 img {
+        max-width: 100%;
+        height: auto;
+    }
     
-    /* Procent section */
+    .g2 {
+          display: grid;
+          margin-top: 100px;
+          justify-content: center;
+          text-align: center;
+}
+    
     .procent {
+          display: grid;
+          margin-top: 100px;
+          justify-content: center;
+          text-align: center;
+}
+    
+    #procent1, #procent2, #procent3 {
+    border-right: none;
+}
+
+    /* Emoji section styling */
+    .emoji {
+        display: grid;
         text-align: center;
-        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    
+    #emoji1, #emoji2 {
+        border-right: none;
     }
 
 }
