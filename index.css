@@ -96,20 +96,24 @@ main p, h1, h2 {
 
 /* Image grid styling */
 #images1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     justify-items: center;
-    padding: 20px;
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
 }
 
 #images1 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
+  object-fit: contain;
+  margin: ;
+  gap: 10px;
+  margin: 10px;
 }
 
 /* Section 1 (unchanged) */
@@ -317,6 +321,10 @@ footer {
     margin-bottom: 5px;
 }
 
+section {
+    display: none;
+}
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
@@ -364,6 +372,30 @@ footer {
     
     #emoji1, #emoji2 {
         border-right: none;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: white; /* Adjust color to match background */
+    }
+    
+    .logo img {
+        height: 40px; /* Adjust size to match the image */
+    }
+    
+    #hamburger img {
+        width: 30px; /* Adjust width to match the hamburger icon */
+        cursor: pointer;
+    }
+
+    div#text1 {
+        display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     }
 
 }
