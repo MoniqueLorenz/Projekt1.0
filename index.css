@@ -28,6 +28,8 @@ main p, h1, h2 {
 }
 
 /* Navigation menu */
+
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -233,92 +235,6 @@ div#text {
     width: 450px;
 }
 
-/* Footer styling */
-.footer {
-    border-top: solid gray 1px;
-    color: #666;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding-top: 70px;
-}
-
-.footer .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.footer .column {
-    flex: 1;
-    padding: 0 20px;
-    min-width: 180px;
-}
-
-.footer .column:first-child {
-    max-width: 250px;
-}
-
-.footer .logo img {
-    width: 150px;
-}
-
-.footer .social-icons {
-    margin: 20px 0 40px;
-}
-
-.footer .social-icons img {
-    width: 25px;
-    vertical-align: middle;
-}
-
-.footer .legal {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-.footer .links div h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.footer .links div ul {
-    padding: 0;
-}
-
-.footer .links div ul li {
-    margin-bottom: 8px;
-}
-
-.footer .links div ul li a {
-    color: #666;
-    text-decoration: none;
-}
-
-.footer .copyright {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #666;
-}
-
-/* List styling */
-ul, ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Link styling */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* Section 7 (g2 unchanged) */
 .g2 {
     display: flex;
@@ -330,6 +246,77 @@ a {
 #badges img {
     width: 450px;
 }
+
+
+/* General footer styles */
+footer {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Container holding all footer content */
+#foten {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px; /* Space between sections */
+}
+
+/* Logo styling */
+#foten .logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    filter: grayscale(100%); /* Grayscale effect */
+}
+
+.social-icons img:hover {
+    filter: none; /* Remove grayscale on hover */
+}
+
+/* Paragraph for legal and copyright text */
+#foten p {
+    font-size: 12px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Column structure */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px; /* Ensure columns have some width */
+}
+
+.column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.column a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #555;
+    margin-bottom: 5px;
+}
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
@@ -378,14 +365,5 @@ a {
     #emoji1, #emoji2 {
         border-right: none;
     }
-
-    .menu2 {
-        display: flex;
-        justify-content: stretch;
-        }
-        
-        .menu2 img {
-            height: 10px
-        }
 
 }

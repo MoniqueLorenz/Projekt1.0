@@ -1,0 +1,165 @@
+.footer {
+    border-top: solid gray 1px;
+    color: #666;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding-top: 70px;
+}
+
+.footer .sidofot {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer .column {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 180px;
+}
+
+.footer .column:first-child {
+    max-width: 250px;
+}
+
+
+
+
+
+
+
+.footer .legal {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .links div h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer .links div ul {
+    padding: 0;
+}
+
+.footer .links div ul li {
+    margin-bottom: 8px;
+}
+
+.footer .links div ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* List styling */
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .social-icons img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.footer .social-icons {
+    margin: 20px 0 40px;
+}
+
+.footer .logo img {
+    width: 150px;
+}
+
+
+
+/*DENNA FUNKAR TILL MOBIL*/
+.section8 {
+    border-top: solid gray 1px;
+    color: #666;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 15px; /* Adjust padding for mobile */
+}
+
+/* Flexbox for side sections */
+.sidofot {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+.logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+.social-icons {
+    margin: 10px 0; /* Space above and below icons */
+}
+
+.social-icons img {
+    width: 25px; /* Size of social icons */
+    margin-right: 10px; /* Space between icons */
+    vertical-align: middle;
+}
+
+.legal,
+.copyright {
+    margin: 5px 0; /* Space above and below text */
+}
+
+/* Column styling for lists */
+.lists {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    width: 100%; /* Full width for lists */
+}
+
+.side1, .side2 {
+    display: flex;
+    flex-direction: column; /* Stack link columns vertically */
+    width: 48%; /* Two columns side by side */
+}
+
+/* Column styles */
+.column {
+    margin-bottom: 20px; /* Space below each column */
+}
+
+.column h4 {
+    font-size: 16px; /* Heading size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.column ul {
+    padding: 0;
+    list-style-type: none; /* Remove default list styles */
+}
+
+.column ul li {
+    margin-bottom: 8px; /* Space below list items */
+}
+
+.column ul li a {
+    color: #666; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
