@@ -1,3 +1,86 @@
+:root {
+    --colorDarkestgrey :#050505;
+    --colorDarkestgrey :#121212;
+    --color1 : #353535;
+    --color2 :  #666666;
+    --color3 : #7f7f7f;
+    --color4 : #999999;
+    --color5 : #efefef;
+    --color6 : #f4f4f4;
+    --shadow1 : rgba(0,0,0,0.2);
+    --shadow2 : rgba(0,0,0,0.1);     
+    --font-sizeXXXXS: 12px;
+    --font-sizeXXXS: 13px;
+    --font-sizeXXXS: 13.5px;
+    --font-sizeXXS: 14px;
+    --font-sizeXS: 15px;
+    --font-sizeS: 18px;
+    --font-sizeM: 24px;
+    --font-sizeL: 26px;
+    --font-sizeXL: 36px;
+    --font-sizeXXL: 45px;
+    --font-sizeXXXL: 53px;
+    --fontweight1 : 650;
+    --fontweight2 : 550;
+    --fontweight3 : 450;
+    --fontweight4 : 400;
+    --fontweight5 : 320;
+}
+
+h1 {
+    font-size: var(--font-sizeXXXL);
+    font-weight: var(--fontweight1);
+}
+
+#h1grey {
+    color: var(--color2);
+}
+
+h2 {
+   font-size: var(--font-sizeXL);
+   font-weight: var(--fontweight2);
+   
+}
+
+#greyh2 {
+    color: var(--color4);
+    font-weight: var(--fontweight3);
+    margin-top: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--font-sizeL);
+    font-weight: var(--fontweight1); 
+}
+
+#darkp {
+    color: var(--color1);
+    font-weight: var(2);
+    font-size: var(--font-sizeM);
+    text-decoration: none;
+}
+
+#darkp2 {
+    color: var(--color1);
+}
+
+#darkm {
+    color: var(--color1);
+}
+
+p {
+    line-height: 1.5;
+    color: var(--color3);
+    font-size: var(--font-sizeS);
+}
+
+#g2p {
+    color: var(--color1);
+}
+
+
+
 @font-face {
     font-family: inter;
     src: url(Inter.ttf);
@@ -6,18 +89,6 @@
 body {
     font-family: inter;
     margin: 0;
-    padding: 0px 20px;
-}
-
-/* Main container */
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-}
-
-main p, h1, h2 {
-    margin-top: 20px;
-    line-height: 1.3;
 }
 
 /* Basic reset */
@@ -27,14 +98,23 @@ main p, h1, h2 {
     box-sizing: border-box;
 }
 
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+main p, h1, h2 {
+    margin-top: 10px;
+}
+
 /* Navigation menu */
-
-
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border-bottom: 1px solid var(--color5);
 }
 
 /* Left part of the navigation */
@@ -55,7 +135,7 @@ main p, h1, h2 {
     margin-left: 20px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: var(--color1);
     position: relative;
     display: inline-block;
 }
@@ -71,15 +151,17 @@ main p, h1, h2 {
     color: white;
     padding: 8px 16px;
     border-radius: 4px;
-    font-weight: bold;
     cursor: pointer;
-    width: 145px;
+    width: 160px;
+    font-weight: var(--fontweight3);
+    font-size: var(--font-sizeS);
 }
 
 #dark2 {
     text-align: center;
     max-width: 600px;
     margin: 20px auto;
+    margin-bottom: 60px;
 }
 
 /* Brand logo and caret icon spacing */
@@ -100,8 +182,10 @@ main p, h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid var(--color5);
+    border-top: 1px solid var(--color5);
+    gap: 5px;
+  padding: 10px;
 }
 
 #images1 img {
@@ -111,7 +195,6 @@ main p, h1, h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100px;
   object-fit: contain;
-  margin: ;
   gap: 10px;
   margin: 10px;
 }
@@ -129,19 +212,32 @@ main p, h1, h2 {
     height: auto;
 }
 
+.section2 {
+    margin-top: 80px;
+}
+
 /* Section spacing */
 .section2, .section3, .section4, .section5 .section6, .section7, .section8{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding: 15px
+
 }
 
 .section5 {
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid var(--color5);
+    border-top: 1px solid var(--color5);
+    padding: 100px;
+}
+
+.section6 {
+    padding-top: 70px;
+}
+
+.section7 {
+    padding-top: 30px;
 }
 
 #shadow {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Text and image formatting inside sections */
@@ -167,16 +263,14 @@ main p, h1, h2 {
 }
 
 div#text {
-    margin-bottom: 30px;
-}
+    margin-bottom: 45px;}
 
 /* Main box styling */
 #mainbox {
-    max-width: 600px;
-    margin: 0 auto 80px;
+    max-width: 800px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #eeecec;
+    background-color: var(--color6);
 }
 
 /* Table styling */
@@ -208,11 +302,15 @@ div#text {
 .emoji {
     display: flex;
     text-align: center;
-    margin-top: 40px;
+    padding: 70px 0px;
+}
+
+#emoji1, #emoji2, #emoji3 {
+    padding: 10px;
 }
 
 #emoji1, #emoji2 {
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--color5);
 }
 
 #link {
@@ -231,7 +329,7 @@ div#text {
 }
 
 #procent1, #procent2, #procent3 {
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--color5);
 }
 
 /* Badges */
@@ -243,8 +341,8 @@ div#text {
 .g2 {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    padding: 50px 0px;
+    gap: 40px;
 }
 
 #badges img {
@@ -254,11 +352,12 @@ div#text {
 
 /* General footer styles */
 footer {
-    padding: 40px 60px;
     display: flex;
     justify-content: space-between;
-    font-family: Arial, sans-serif;
-    color: #333;
+    border-top: 1px solid var(--color5);
+    margin: 20px auto;
+    max-width: 1200px;
+    padding-top: 60px;
 }
 
 /* Container holding all footer content */
@@ -272,15 +371,16 @@ footer {
 
 /* Logo styling */
 #foten .logo img {
-    width: 50px;
+    width: 180px;
     height: auto;
+    padding-bottom: 30px;
 }
 
 /* Social icons styling */
 .social-icons {
     display: flex;
     gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .social-icons img {
@@ -296,10 +396,7 @@ footer {
 
 /* Paragraph for legal and copyright text */
 #foten p {
-    font-size: 12px;
-    color: #777;
-    margin: 5px 0;
-}
+    margin-top: 20px;}
 
 /* Column structure */
 .column {
@@ -323,6 +420,10 @@ footer {
 
 section {
     display: none;
+}
+
+#hover{
+    display: flex
 }
 
 
